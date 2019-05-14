@@ -9,41 +9,34 @@
     <link rel="stylesheet" href="../../assets/css/bootstrap.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 </head>
-<body style="background: url(../../assets/img/fondo3.jpg); background-size: cover">
+<body style="background: url(../../assets/img/fondo.jpg)">
     <nav class="navbar navbar-expand-lg navbar-dark" style="background: rgba(0, 0, 0, .7)">
-        <span class="navbar-brand mb-0 h1">Asignaturas</span>
+        <span class="navbar-brand mb-0 h1">Temas</span>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="libros.html">Libros</a>
+                    <a class="nav-link" href="libros.php">Libros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="autores.html">Autores</a>
+                    <a class="nav-link" href="autores.php">Autores</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="asignaturas.html">Asignaturas</a>
+                    <a class="nav-link active" href="asignatura.php">Asignaturas</a>
                 </li>
             </ul>
             <div class="float-right">
-                <button type="button" id="btn_logout" class="btn btn-outline-light" onclick="location.href='../../index.html'">Cerrar Sesion</button>
+                <button type="button" id="btn_logout" class="btn btn-outline-light" onclick="location.href='libros.php'">Cerrar Sesion</button>
             </div>
         </div>
     </nav>
     <div class="container shadow p-3 mb-5 bg-white rounded" style="margin-top: 30px">
         <h3>Biblioteca</h3>
+        <label class="panel-body">Listado general de Asignaturas</label>
+        <a href="nuevo_asignatura.php"><button class="btn btn-sm btn-primary">Agregar nueva Asignatura</button></a>
         <hr>
-        <h5>Listado general de Asignaturas</h5>
-        <table class="table table-bordered table-hover text-center">
-            <thead class="thead-dark">
-                <tr>
-                    <th>#</th>
-                    <th>Asignaturas</th>
-                </tr>
-            </thead>
-            <tbody id="tbl_temas">
-
-            </tbody>
+        <table id="tbl_temas" class="table table-bordered table-hover text-center">
+            
         </table>
         <nav aria-label="Page navigation">
             <ul class="pagination justify-content-center" id="div_botones_temas">

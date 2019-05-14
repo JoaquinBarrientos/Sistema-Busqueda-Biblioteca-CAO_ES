@@ -35,7 +35,7 @@
                     <button id="btn_registrar" class="btn btn-primary btn-block">Registrarme</button>
                 </div>
                 <div class="form-group text-center">
-                    <label>Ya tienes una cuenta? <a href="index.html">Iniciar Sesion</a></label> 
+                    <label>Ya tienes una cuenta? <a href="index.php">Iniciar Sesion</a></label> 
                 </div>
             </div>
         </div>

@@ -16,24 +16,24 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="libros.html">Libros</a>
+                    <a class="nav-link" href="libros.php">Libros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="autores.html">Autores</a>
+                    <a class="nav-link active" href="autores.php">Autores</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="asignatura.html">Asignaturas</a>
+                    <a class="nav-link" href="asignatura.php">Asignaturas</a>
                 </li>
             </ul>
             <div class="float-right">
-                <button type="button" id="btn_logout" class="btn btn-outline-light" onclick="location.href='../../index.html'">Cerrar Sesion</button>
+                <button type="button" id="btn_logout" class="btn btn-outline-light" onclick="location.href='../../index.php'">Cerrar Sesion</button>
             </div>
         </div>
     </nav>
     <div class="container shadow p-3 mb-5 bg-white rounded" style="margin-top: 30px">
         <h3>Biblioteca</h3>
         <label class="panel-body">Listado general de Autores</label>
-        <a href="nuevo_autor.html"><button class="btn btn-sm btn-primary ">Agregar nuevo autor</button></a>
+        <a href="nuevo_autor.php"><button class="btn btn-sm btn-primary ">Agregar nuevo autor</button></a>
         <hr>
         <table class="table table-bordered table-hover text-center">
             <thead class="thead-dark">

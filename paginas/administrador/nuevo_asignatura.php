@@ -3,51 +3,53 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Temas</title>
+    <title>Nueva Asignatura</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="../../assets/css/bootstrap.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 </head>
 <body style="background: url(../../assets/img/fondo.jpg)">
     <nav class="navbar navbar-expand-lg navbar-dark" style="background: rgba(0, 0, 0, .7)">
-        <span class="navbar-brand mb-0 h1">Temas</span>
+        <span class="navbar-brand mb-0 h1">Nueva Asignatura</span>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="libros.html">Libros</a>
+                    <a class="nav-link" href="nuevo_libro.php">Agregar libros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="autores.html">Autores</a>
+                    <a class="nav-link" href="nuevo_autor.php">Agregar autores</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="asignatura.html">Asignaturas</a>
+                    <a class="nav-link active" href="nuevo_asignatura.php">Agregar Asignaturas</a>
                 </li>
             </ul>
             <div class="float-right">
-                <button type="button" id="btn_logout" class="btn btn-outline-light" onclick="location.href='libros.html'">Cerrar Sesion</button>
+                <button type="button" id="btn_logout" class="btn btn-outline-light" onclick="location.href='../../index.php'">Cerrar Sesion</button>
             </div>
         </div>
     </nav>
-    <div class="container shadow p-3 mb-5 bg-white rounded" style="margin-top: 30px">
-        <h3>Biblioteca</h3>
-        <label class="panel-body">Listado general de Asignaturas</label>
-        <a href="nuevo_asignatura.html"><button class="btn btn-sm btn-primary">Agregar nueva Asignatura</button></a>
+    <div class="container shadow p-3 mb-5 bg-white rounded" style="max-width: 450px; height: 500px; margin-top: 50px">
+        <h3>Agregar Asignatura</h3>
         <hr>
-        <table id="tbl_temas" class="table table-bordered table-hover text-center">
-            
-        </table>
-        <nav aria-label="Page navigation">
-            <ul class="pagination justify-content-center" id="div_botones_temas">
-                
-            </ul>
-        </nav>
+        <div class="form-group">
+            <label>Asignatura</label>
+            <input type="text" id="txt_tema" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Código Deway de Asignatura</label>
+            <input type="text" id="txt_fcodDew" class="form-control" maxlength="5">
+        </div>
+        <div>
+            <a href="asignatura.php"><button class="btn btn-lg btn-outline-secondary">Regresar</button></a>
+            <button id="btn_aceptar_tema" class="btn btn-lg btn-outline-success float-right">Aceptar</button>
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../javascript/jquery.min.js"></script>
-    <script type="text/javascript" src="../javascript/temas.js"></script>
+    <script type="text/javascript" src="../javascript/validaciones.js"></script>
+    <script type="text/javascript" src="../javascript/nuevo_tema.js"></script>
 </body>
 </html>

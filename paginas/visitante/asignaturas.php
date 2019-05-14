@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Libros</title>
+    <title>Temas</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="../../assets/css/bootstrap.css">
@@ -11,59 +11,42 @@
 </head>
 <body style="background: url(../../assets/img/fondo3.jpg); background-size: cover">
     <nav class="navbar navbar-expand-lg navbar-dark" style="background: rgba(0, 0, 0, .7)">
-        <span class="navbar-brand mb-0 h1">Libros</span>
+        <span class="navbar-brand mb-0 h1">Asignaturas</span>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" href="libros.html">Libros</a>
+                    <a class="nav-link" href="libros.php">Libros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="autores.html">Autores</a>
+                    <a class="nav-link" href="autores.php">Autores</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="asignaturas.html">Asignaturas</a>
+                    <a class="nav-link active" href="asignaturas.php">Asignaturas</a>
                 </li>
             </ul>
             <div class="float-right">
-                <button type="button" id="btn_logout" class="btn btn-outline-light" onclick="location.href='../../index.html'">Cerrar Sesion</button>
+                <button type="button" id="btn_logout" class="btn btn-outline-light" onclick="location.href='../../index.php'">Cerrar Sesion</button>
             </div>
         </div>
     </nav>
     <div class="container shadow p-3 mb-5 bg-white rounded" style="margin-top: 30px">
         <h3>Biblioteca</h3>
         <hr>
-        <h5>Listado general de libros</h5>
-        <div class="form-group justify-content-end">
-            <div class="input-group mb-3">
-                <span class="input-group-text">Buscar por:</span>
-                <select id="slc_busqueda" class="form-control" onchange="Busqueda();">
-                    <option value="1">Libro</option>
-                    <option value="2">Autor</option>
-                    <option value="3">Asignatura</option>
-                </select>
-                <input type="text" class="form-control" id="txt_busqueda" onkeyup="Busqueda();">
-                <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button" onclick="Busqueda();"><i class="fas fa-search"></i></button>
-                </div>
-            </div>
-        </div>
+        <h5>Listado general de Asignaturas</h5>
         <table class="table table-bordered table-hover text-center">
             <thead class="thead-dark">
                 <tr>
                     <th>#</th>
-                    <th>Libro</th>
-                    <th>Autor</th>
-                    <th>Asignatura</th>
-                    <th>Código</th>
+                    <th>Asignaturas</th>
                 </tr>
             </thead>
-            <tbody id="tbl_libros">
+            <tbody id="tbl_temas">
 
             </tbody>
         </table>
         <nav aria-label="Page navigation">
-            <ul class="pagination justify-content-center" id="div_botones_libros">
+            <ul class="pagination justify-content-center" id="div_botones_temas">
                 
             </ul>
         </nav>
@@ -72,6 +55,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../javascript/jquery.min.js"></script>
-    <script type="text/javascript" src="../javascript/libros.js"></script>
+    <script type="text/javascript" src="../javascript/temas.js"></script>
 </body>
 </html>
