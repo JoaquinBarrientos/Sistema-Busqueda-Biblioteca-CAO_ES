@@ -14,12 +14,12 @@
     include_once("core/baseDatos.php");
 
     //Cambiar según sea necesario
-    // $host = "localhost";
-    // $dbname = "bd"; //Poner nombre de BD Aquí 
-    // $user = "root";
+    $host = "localhost";
+    $dbname = "BD_consultalibros.sql"; //Poner nombre de BD Aquí 
+    $user = "root";
     // $pass = "mysql"; //Dejar vacía si se usa XAMPP, mysql para AMPPS
 
-    // $objBD = new baseDatos($host,$dbname,$user,$pass);
+    $objBD = new baseDatos($host,$dbname,$user,$pass);
     ?>
     <div class="container shadow p-3 mb-5 bg-white rounded" style="max-width: 450px; height: 500px; margin-top: 90px">
         <h2>Seleccione su tipo de usuario para poder ingresar</h2>
